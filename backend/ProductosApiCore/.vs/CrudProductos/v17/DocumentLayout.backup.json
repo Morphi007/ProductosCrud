@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\morph\\OneDrive\\Desktop\\Productos\\Producto_tenno\\backend\\ProductosApiCore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5AD62CA2-DE6B-4ABA-B99A-AAFB0461188A}|CrudProductos.csproj|c:\\users\\morph\\onedrive\\desktop\\productos\\producto_tenno\\backend\\productosapicore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AD62CA2-DE6B-4ABA-B99A-AAFB0461188A}|CrudProductos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AD62CA2-DE6B-4ABA-B99A-AAFB0461188A}|CrudProductos.csproj|c:\\users\\morph\\onedrive\\desktop\\productos\\producto_tenno\\backend\\productosapicore\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AD62CA2-DE6B-4ABA-B99A-AAFB0461188A}|CrudProductos.csproj|solutionrelative:productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AD62CA2-DE6B-4ABA-B99A-AAFB0461188A}|CrudProductos.csproj|c:\\users\\morph\\onedrive\\desktop\\productos\\producto_tenno\\backend\\productosapicore\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AD62CA2-DE6B-4ABA-B99A-AAFB0461188A}|CrudProductos.csproj|solutionrelative:productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AD62CA2-DE6B-4ABA-B99A-AAFB0461188A}|CrudProductos.csproj|c:\\users\\morph\\onedrive\\desktop\\productos\\producto_tenno\\backend\\productosapicore\\contextmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AD62CA2-DE6B-4ABA-B99A-AAFB0461188A}|CrudProductos.csproj|solutionrelative:contextmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AD62CA2-DE6B-4ABA-B99A-AAFB0461188A}|CrudProductos.csproj|c:\\users\\morph\\onedrive\\desktop\\productos\\producto_tenno\\backend\\productosapicore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5AD62CA2-DE6B-4ABA-B99A-AAFB0461188A}|CrudProductos.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\morph\\OneDrive\\Desktop\\Productos\\Producto_tenno\\backend\\ProductosApiCore\\ProductoController.cs",
+              "RelativeDocumentMoniker": "ProductoController.cs",
+              "ToolTip": "C:\\Users\\morph\\OneDrive\\Desktop\\Productos\\Producto_tenno\\backend\\ProductosApiCore\\ProductoController.cs",
+              "RelativeToolTip": "ProductoController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T19:16:36.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Productos.cs",
+              "DocumentMoniker": "C:\\Users\\morph\\OneDrive\\Desktop\\Productos\\Producto_tenno\\backend\\ProductosApiCore\\Productos.cs",
+              "RelativeDocumentMoniker": "Productos.cs",
+              "ToolTip": "C:\\Users\\morph\\OneDrive\\Desktop\\Productos\\Producto_tenno\\backend\\ProductosApiCore\\Productos.cs",
+              "RelativeToolTip": "Productos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T19:16:36.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\morph\\OneDrive\\Desktop\\Productos\\Producto_tenno\\backend\\ProductosApiCore\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\morph\\OneDrive\\Desktop\\Productos\\Producto_tenno\\backend\\ProductosApiCore\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T19:16:36.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\morph\\OneDrive\\Desktop\\Productos\\Producto_tenno\\backend\\ProductosApiCore\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\morph\\OneDrive\\Desktop\\Productos\\Producto_tenno\\backend\\ProductosApiCore\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-28T19:16:36.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ContextManager.cs",
+              "DocumentMoniker": "C:\\Users\\morph\\OneDrive\\Desktop\\Productos\\Producto_tenno\\backend\\ProductosApiCore\\ContextManager.cs",
+              "RelativeDocumentMoniker": "ContextManager.cs",
+              "ToolTip": "C:\\Users\\morph\\OneDrive\\Desktop\\Productos\\Producto_tenno\\backend\\ProductosApiCore\\ContextManager.cs",
+              "RelativeToolTip": "ContextManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T19:16:36.53Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

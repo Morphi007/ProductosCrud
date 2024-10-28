@@ -1,18 +1,53 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { obtenerProductos, actualizarProducto, eliminarProducto } from '../../../service/api';
 import styles from './ListaProducto.module.css';
 
-const ListaProducto = () => {
-    const [productos] = useState([
-        { name: 'Manzana', pricio: '500$', date: '28/10/2024' },
-        { name: 'Lechoza', price: '35$', date: '28/10/2024' },
-        { name: 'Aguacate', price: '25$', date: '28/10/2024' }
-    ]);
 
+const ListaProductos = () => {
+    const [productos, setProductos] = useState([]);
     const [filtro, setFiltro] = useState('');
+    const [modoEdicion, setModoEdicion] = useState(null);
+    const [nombreEditado, setNombreEditado] = useState('');
+    const [precioEditado, setPrecioEditado] = useState('');
+
+    useEffect(() => {
+        const cargarProductos = async () => {
+            const datosProductos = await obtenerProductos();
+            setProductos(datosProductos);
+        };
+        cargarProductos();
+    }, []);
 
     const productosFiltrados = productos.filter(producto =>
-        producto.name.toLowerCase().includes(filtro.toLowerCase())
+        producto.nombre.toLowerCase().includes(filtro.toLowerCase())
     );
+
+    const iniciarEdicion = (producto) => {
+        setModoEdicion(producto.productoId);
+        setNombreEditado(producto.nombre);
+        setPrecioEditado(producto.precio);
+    };
+
+    const cancelarEdicion = () => {
+        setModoEdicion(null);
+        setNombreEditado('');
+        setPrecioEditado('');
+    };
+
+    const guardarEdicion = async (productoId) => {
+        const productoActualizado = {
+            nombre: nombreEditado,
+            precio: parseFloat(precioEditado),
+        };
+        await actualizarProducto(productoId, productoActualizado);
+        setProductos(productos.map(p => p.productoId === productoId ? { ...p, ...productoActualizado } : p));
+        cancelarEdicion();
+    };
+
+    const manejarEliminacion = async (productoId) => {
+        await eliminarProducto(productoId);
+        setProductos(productos.filter(p => p.productoId !== productoId));
+    };
 
     return (
         <div className={styles['lista-productos']}>
@@ -21,14 +56,37 @@ const ListaProducto = () => {
                 placeholder="Buscar por nombre"
                 value={filtro}
                 onChange={(e) => setFiltro(e.target.value)}
-                className={styles['entrada-filtro']}
+                className={styles['input-filtro']}
             />
-            <div className={styles['elementos-producto']}>
-                {productosFiltrados.map((producto, index) => (
-                    <div key={index} className={styles['elemento-producto']}>
-                        <h3>{producto.name}</h3>
-                        <p className={styles.precio}>{producto.price}</p>
-                        <p>{producto.date}</p>
+            <div className={styles['items-producto']}>
+                {productosFiltrados.map((producto) => (
+                    <div key={producto.productoId} className={styles['item-producto']}>
+                        {modoEdicion === producto.productoId ? (
+                            <>
+                                <input
+                                    type="text"
+                                    value={nombreEditado}
+                                    onChange={(e) => setNombreEditado(e.target.value)}
+                                    className={styles['input-edicion']}
+                                />
+                                <input
+                                    type="number"
+                                    value={precioEditado}
+                                    onChange={(e) => setPrecioEditado(e.target.value)}
+                                    className={styles['input-edicion']}
+                                />
+                                <button onClick={() => guardarEdicion(producto.productoId)} className={styles['boton-guardar']}>Guardar</button>
+                                <button onClick={cancelarEdicion} className={styles['boton-cancelar']}>Cancelar</button>
+                            </>
+                        ) : (
+                            <>
+                                <h3>{producto.nombre}</h3>
+                                <p>Precio: ${producto.precio}</p>
+                                <p>Fecha de Creación: {new Date(producto.fechaCreacion).toLocaleDateString()}</p>
+                                <button onClick={() => iniciarEdicion(producto)} className={styles['boton-editar']}>Editar</button>
+                                <button onClick={() => manejarEliminacion(producto.productoId)} className={styles['boton-eliminar']}>Eliminar</button>
+                            </>
+                        )}
                     </div>
                 ))}
             </div>
@@ -36,4 +94,4 @@ const ListaProducto = () => {
     );
 };
 
-export default ListaProducto;
+export default ListaProductos;

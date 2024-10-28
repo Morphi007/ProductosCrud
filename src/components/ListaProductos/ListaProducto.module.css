@@ -1,14 +1,14 @@
 .lista-productos {
     width: 90%;
     max-width: 600px;
-    margin: 30px auto;
-    padding: 23px;
+    margin: 20px auto;
+    padding: 15px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.entrada-filtro {
+.input-filtro {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -18,16 +18,16 @@
     transition: border 0.3s ease;
 }
 
-.entrada-filtro:focus {
+.input-filtro:focus {
     border-color: #66afe9;
     box-shadow: 0 0 5px rgba(102, 175, 233, 0.3);
 }
 
-.elementos-producto {
+.items-producto {
     width: 100%;
 }
 
-.elemento-producto {
+.item-producto {
     background-color: #fff;
     padding: 15px;
     margin-bottom: 12px;
@@ -37,20 +37,60 @@
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
-.elemento-producto:hover {
+.item-producto:hover {
     background-color: #f1f1f1;
     transform: scale(1.02);
 }
 
-.elemento-producto h3 {
+.item-producto h3 {
     margin: 0;
     color: #333;
     font-size: 1.1em;
     font-weight: bold;
 }
 
-.elemento-producto p {
+.item-producto p {
     margin: 6px 0;
     color: #666;
     font-size: 0.9em;
+}
+
+.input-edicion {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.boton-guardar,
+.boton-cancelar,
+.boton-editar,
+.boton-eliminar {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.boton-guardar {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.boton-cancelar {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.boton-editar {
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.boton-eliminar {
+    background-color: #f44336;
+    color: #fff;
 }
