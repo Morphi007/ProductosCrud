@@ -1,9 +1,10 @@
-// src/paginas/PaginaProductos.js
+import ListaProductos from "./ListaProductos/ListaProductos";
 
 const PaginaProductos = () => {
   return (
     <div>
-      <h2>Inicio</h2>
+      <h2>Productos</h2>
+      <ListaProductos/>
     </div>
   );
 };
